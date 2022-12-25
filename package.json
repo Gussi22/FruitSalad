@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@discordjs/opus": "^0.7.0"
+  },
+  "name": "fruitsalad-bot",
+  "version": "1.0.0",
+  "main": "./Structures/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gussi",
+  "license": "ISC",
+  "description": ""
+}
