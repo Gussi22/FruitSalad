@@ -1,8 +1,8 @@
 const { MessageActionRow, MessageButton, CommandInteraction } = require("discord.js");
 
 module.exports = {
-	name: "modal",
-	description: "A button that reveals the modal menu",
+	name: "testbutton",
+	description: "Sends test buttons",
 	/**
 	 * 
 	 * @param {CommandInteraction} interaction 
@@ -11,9 +11,13 @@ module.exports = {
 		const row = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
-					.setCustomId("modal")
-					.setLabel("Show Modal")
-					.setStyle("PRIMARY")
+					.setCustomId("Hello")
+					.setLabel("Hello")
+					.setStyle("PRIMARY"),
+				new MessageButton()
+					.setCustomId("Bye")
+					.setLabel("Bye")
+					.setStyle("SECONDARY")
 			);
 
 			interaction.reply({ components: [row] });
