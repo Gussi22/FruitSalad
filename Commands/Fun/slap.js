@@ -7,7 +7,7 @@ module.exports = {
 		{
 			name: "target",
 			description: "Enter the target user to slap",
-			description: "USER",
+			type: "USER",
 			required: true
 		}
 	],
