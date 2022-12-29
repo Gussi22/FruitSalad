@@ -33,7 +33,7 @@ module.exports = client;
 require("../Systems/GiveawaySys")(client);
 require("./Handlers/Anti-Crash")(client);
 
-["Events"].forEach((handler) => {
+["Events", "Commands"].forEach((handler) => {
 	require(`./Handlers/${handler}`)(client, PG, Ascii);
 });
 
